@@ -15,6 +15,24 @@
 		C2778FD21CB8496100BA4025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2778FD01CB8496100BA4025 /* LaunchScreen.storyboard */; };
 		C2778FDD1CB8496100BA4025 /* SwiftBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2778FDC1CB8496100BA4025 /* SwiftBaseProjectTests.swift */; };
 		C2778FE81CB8496100BA4025 /* SwiftBaseProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2778FE71CB8496100BA4025 /* SwiftBaseProjectUITests.swift */; };
+		C2A1F5731CC11CF200101F0E /* BaseActionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1F5721CC11CF200101F0E /* BaseActionListener.swift */; };
+		C2A1F5751CC11D1800101F0E /* BaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1F5741CC11D1800101F0E /* BaseDataProvider.swift */; };
+		C2A1F5771CC11EB600101F0E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1F5761CC11EB600101F0E /* BaseViewController.swift */; };
+		C2C1DB641CBED6DB0030B4C9 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB631CBED6DB0030B4C9 /* BasePresenter.swift */; };
+		C2C1DB661CBED6EB0030B4C9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB651CBED6EB0030B4C9 /* BaseView.swift */; };
+		C2C1DB681CBED82C0030B4C9 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB671CBED82C0030B4C9 /* Routing.swift */; };
+		C2C1DB6A1CBED9FE0030B4C9 /* BaseCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB691CBED9FE0030B4C9 /* BaseCollectionViewDataSource.swift */; };
+		C2C1DB6C1CBEDA1E0030B4C9 /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB6B1CBEDA1E0030B4C9 /* BaseViewCell.swift */; };
+		C2C1DB6E1CBEDA390030B4C9 /* BaseViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB6D1CBEDA390030B4C9 /* BaseViewDataSource.swift */; };
+		C2C1DB701CBEDA420030B4C9 /* BaseCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB6F1CBEDA420030B4C9 /* BaseCollectionViewDelegate.swift */; };
+		C2C1DB721CBEDA4D0030B4C9 /* BaseCollectionViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB711CBEDA4D0030B4C9 /* BaseCollectionViewPresenter.swift */; };
+		C2C1DB741CBEDA590030B4C9 /* BasePageViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB731CBEDA590030B4C9 /* BasePageViewDataSource.swift */; };
+		C2C1DB761CBEDA890030B4C9 /* BaseTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB751CBEDA880030B4C9 /* BaseTableViewDataSource.swift */; };
+		C2C1DB781CBEDA900030B4C9 /* BaseTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB771CBEDA900030B4C9 /* BaseTableViewPresenter.swift */; };
+		C2C1DB7A1CBEDA9D0030B4C9 /* BaseTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB791CBEDA9D0030B4C9 /* BaseTableViewDelegate.swift */; };
+		C2C1DB7C1CBEDEDC0030B4C9 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB7B1CBEDEDC0030B4C9 /* BaseRepository.swift */; };
+		C2C1DB7E1CBEDEF00030B4C9 /* BaseDataOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB7D1CBEDEF00030B4C9 /* BaseDataOutput.swift */; };
+		C2C1DB801CBEDF3A0030B4C9 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB7F1CBEDF3A0030B4C9 /* BaseInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +69,24 @@
 		C2778FE31CB8496100BA4025 /* SwiftBaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2778FE71CB8496100BA4025 /* SwiftBaseProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBaseProjectUITests.swift; sourceTree = "<group>"; };
 		C2778FE91CB8496100BA4025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2A1F5721CC11CF200101F0E /* BaseActionListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseActionListener.swift; sourceTree = "<group>"; };
+		C2A1F5741CC11D1800101F0E /* BaseDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataProvider.swift; sourceTree = "<group>"; };
+		C2A1F5761CC11EB600101F0E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C2C1DB631CBED6DB0030B4C9 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		C2C1DB651CBED6EB0030B4C9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C2C1DB671CBED82C0030B4C9 /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		C2C1DB691CBED9FE0030B4C9 /* BaseCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		C2C1DB6B1CBEDA1E0030B4C9 /* BaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewCell.swift; sourceTree = "<group>"; };
+		C2C1DB6D1CBEDA390030B4C9 /* BaseViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewDataSource.swift; sourceTree = "<group>"; };
+		C2C1DB6F1CBEDA420030B4C9 /* BaseCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		C2C1DB711CBEDA4D0030B4C9 /* BaseCollectionViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewPresenter.swift; sourceTree = "<group>"; };
+		C2C1DB731CBEDA590030B4C9 /* BasePageViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageViewDataSource.swift; sourceTree = "<group>"; };
+		C2C1DB751CBEDA880030B4C9 /* BaseTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDataSource.swift; sourceTree = "<group>"; };
+		C2C1DB771CBEDA900030B4C9 /* BaseTableViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewPresenter.swift; sourceTree = "<group>"; };
+		C2C1DB791CBEDA9D0030B4C9 /* BaseTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDelegate.swift; sourceTree = "<group>"; };
+		C2C1DB7B1CBEDEDC0030B4C9 /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		C2C1DB7D1CBEDEF00030B4C9 /* BaseDataOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataOutput.swift; sourceTree = "<group>"; };
+		C2C1DB7F1CBEDF3A0030B4C9 /* BaseInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +198,9 @@
 		C2778FF61CB8497500BA4025 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C2A1F5711CC11CB400101F0E /* Repositories */,
+				C2A1F5701CC11CAB00101F0E /* Routing */,
+				C2C1DB601CBEC5DE0030B4C9 /* Base */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -179,6 +218,53 @@
 				C2778FCB1CB8496100BA4025 /* Main.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		C2A1F5701CC11CAB00101F0E /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				C2C1DB671CBED82C0030B4C9 /* Routing.swift */,
+			);
+			name = Routing;
+			sourceTree = "<group>";
+		};
+		C2A1F5711CC11CB400101F0E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		C2C1DB601CBEC5DE0030B4C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C2C1DB811CBEE3E30030B4C9 /* UIBase */,
+				C2C1DB631CBED6DB0030B4C9 /* BasePresenter.swift */,
+				C2C1DB651CBED6EB0030B4C9 /* BaseView.swift */,
+				C2C1DB7B1CBEDEDC0030B4C9 /* BaseRepository.swift */,
+				C2C1DB7D1CBEDEF00030B4C9 /* BaseDataOutput.swift */,
+				C2C1DB7F1CBEDF3A0030B4C9 /* BaseInteractor.swift */,
+				C2A1F5721CC11CF200101F0E /* BaseActionListener.swift */,
+				C2A1F5741CC11D1800101F0E /* BaseDataProvider.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		C2C1DB811CBEE3E30030B4C9 /* UIBase */ = {
+			isa = PBXGroup;
+			children = (
+				C2A1F5761CC11EB600101F0E /* BaseViewController.swift */,
+				C2C1DB6B1CBEDA1E0030B4C9 /* BaseViewCell.swift */,
+				C2C1DB691CBED9FE0030B4C9 /* BaseCollectionViewDataSource.swift */,
+				C2C1DB6F1CBEDA420030B4C9 /* BaseCollectionViewDelegate.swift */,
+				C2C1DB711CBEDA4D0030B4C9 /* BaseCollectionViewPresenter.swift */,
+				C2C1DB731CBEDA590030B4C9 /* BasePageViewDataSource.swift */,
+				C2C1DB751CBEDA880030B4C9 /* BaseTableViewDataSource.swift */,
+				C2C1DB791CBEDA9D0030B4C9 /* BaseTableViewDelegate.swift */,
+				C2C1DB771CBEDA900030B4C9 /* BaseTableViewPresenter.swift */,
+				C2C1DB6D1CBEDA390030B4C9 /* BaseViewDataSource.swift */,
+			);
+			name = UIBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,8 +449,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C1DB681CBED82C0030B4C9 /* Routing.swift in Sources */,
+				C2C1DB6C1CBEDA1E0030B4C9 /* BaseViewCell.swift in Sources */,
+				C2C1DB741CBEDA590030B4C9 /* BasePageViewDataSource.swift in Sources */,
+				C2C1DB7C1CBEDEDC0030B4C9 /* BaseRepository.swift in Sources */,
 				C2778FCA1CB8496100BA4025 /* ViewController.swift in Sources */,
+				C2A1F5771CC11EB600101F0E /* BaseViewController.swift in Sources */,
+				C2C1DB7E1CBEDEF00030B4C9 /* BaseDataOutput.swift in Sources */,
+				C2C1DB6A1CBED9FE0030B4C9 /* BaseCollectionViewDataSource.swift in Sources */,
+				C2C1DB7A1CBEDA9D0030B4C9 /* BaseTableViewDelegate.swift in Sources */,
+				C2A1F5731CC11CF200101F0E /* BaseActionListener.swift in Sources */,
+				C2C1DB781CBEDA900030B4C9 /* BaseTableViewPresenter.swift in Sources */,
+				C2C1DB6E1CBEDA390030B4C9 /* BaseViewDataSource.swift in Sources */,
+				C2C1DB641CBED6DB0030B4C9 /* BasePresenter.swift in Sources */,
+				C2C1DB721CBEDA4D0030B4C9 /* BaseCollectionViewPresenter.swift in Sources */,
 				C2778FC81CB8496100BA4025 /* AppDelegate.swift in Sources */,
+				C2C1DB761CBEDA890030B4C9 /* BaseTableViewDataSource.swift in Sources */,
+				C2C1DB701CBEDA420030B4C9 /* BaseCollectionViewDelegate.swift in Sources */,
+				C2C1DB801CBEDF3A0030B4C9 /* BaseInteractor.swift in Sources */,
+				C2C1DB661CBED6EB0030B4C9 /* BaseView.swift in Sources */,
+				C2A1F5751CC11D1800101F0E /* BaseDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
