@@ -45,5 +45,6 @@ extension MoviesListPresenter: BaseTableViewPresenter {
     func onItemClick(item: Movie, position: Int) {
         
         print("Movie clicked: "+item.title!)
+        router.movieDetail(item)
     }
 }

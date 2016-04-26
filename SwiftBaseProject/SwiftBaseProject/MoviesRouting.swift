@@ -16,6 +16,8 @@ extension MoviesRouting: Routing {
     
     func search() {
         
+        let searchVC = R.storyboard.main.searchMoviesViewController()!
+        presentViewController(searchVC)
     }
     
     func movieDetail(movie: Movie) {
