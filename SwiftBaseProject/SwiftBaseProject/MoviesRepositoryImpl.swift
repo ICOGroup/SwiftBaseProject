@@ -12,9 +12,11 @@ import SwiftyJSON
 
 class MoviesRepositoryImpl: NSObject {
 
+    let UnknownError = "Unknown Error"
+    
 }
 
-extension MoviesRepositoryImpl: MoviesRepository{
+extension MoviesRepositoryImpl: MoviesRepository {
     
     func searchMovieWithTitle(title: String, response: (movies: [Movie]?, error: String?) -> ()) {
         
@@ -26,14 +28,31 @@ extension MoviesRepositoryImpl: MoviesRepository{
                     
                     let json = JSON(result)
                     
-                    print(json)
-                    debugPrint(json)
+                    let serverResponse = json["Response"].stringValue
+                    if serverResponse == "False" {
+                        
+                        let err = json["Error"].stringValue
+                        response(movies: nil, error: err)
+                        return
+                    }
                     
+                    let movieArray = json["Search"].array
+                    guard let mList = movieArray else {
+                        response(movies: nil, error: self.UnknownError)
+                        return
+                    }
+                    
+                    var allMovies = [Movie]()
+                    for mJson in mList {
+                        allMovies.append(Movie.fromJson(mJson))
+                    }
+                    
+                    response(movies: allMovies, error: nil)
                     break
                     
-                case .Failure(let error):
+                case .Failure( _):
                     
-                    print("error: "+error.localizedDescription)
+                    response(movies: nil, error: self.UnknownError)
                     break
                 }
                 

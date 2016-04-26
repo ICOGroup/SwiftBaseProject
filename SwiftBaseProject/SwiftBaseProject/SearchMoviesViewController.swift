@@ -27,6 +27,10 @@ class SearchMoviesViewController: UIViewController {
         dataSource = BaseTableViewDataSource()
         delegate = BaseTableViewDelegate(dataSource: dataSource, presenter: presenter as! MoviesListPresenter<SearchMoviesViewController>)
         
+        //Tableview setup
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         tableView.dataSource = dataSource
         tableView.delegate = delegate
         
@@ -43,6 +47,8 @@ extension SearchMoviesViewController: MoviesListView {
     
     func displayMovies(movies: [Movie]) {
         
+        dataSource.items = movies
+        tableView.reloadData()
     }
     
     func displayError(error: String) {
@@ -57,6 +63,8 @@ extension SearchMoviesViewController: UISearchBarDelegate {
         if let text = searchBar.text {
             presenter.searchAllMoviesWithString(text)
         }
+        
+        searchBar.endEditing(true)
         
     }
 }

@@ -9,7 +9,9 @@
 import Foundation
 
 //Declare here all view controller transitions
-public protocol Routing {
+protocol Routing {
     
+    func search()
     
+    func movieDetail(movie: Movie)
 }

@@ -58,7 +58,7 @@ enum MoviesAPI: URLRequestConvertible {
             switch self {
                 
             case .Search(let query):
-                return (path, ["t": query])
+                return (path, ["s": query])
 //            case .Register(let user):
 //                return (path, ["username": user.userName!, "password": user.password!, "activate": true])
 //            case .Login(let user):
