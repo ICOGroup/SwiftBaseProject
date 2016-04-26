@@ -31,6 +31,7 @@
 		C2BE95EB1CCFBE3200539006 /* MoviesListDataOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95EA1CCFBE3200539006 /* MoviesListDataOutput.swift */; };
 		C2BE95ED1CCFBE4000539006 /* MoviesListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95EC1CCFBE4000539006 /* MoviesListProvider.swift */; };
 		C2BE95F21CCFF2FE00539006 /* UIApplication+SwiftBaseProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95F11CCFF2FE00539006 /* UIApplication+SwiftBaseProject.swift */; };
+		C2BE95F51CCFF56000539006 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95F41CCFF56000539006 /* R.generated.swift */; };
 		C2C1DB641CBED6DB0030B4C9 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB631CBED6DB0030B4C9 /* BasePresenter.swift */; };
 		C2C1DB661CBED6EB0030B4C9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB651CBED6EB0030B4C9 /* BaseView.swift */; };
 		C2C1DB681CBED82C0030B4C9 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB671CBED82C0030B4C9 /* Routing.swift */; };
@@ -98,6 +99,7 @@
 		C2BE95EA1CCFBE3200539006 /* MoviesListDataOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesListDataOutput.swift; sourceTree = "<group>"; };
 		C2BE95EC1CCFBE4000539006 /* MoviesListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesListProvider.swift; sourceTree = "<group>"; };
 		C2BE95F11CCFF2FE00539006 /* UIApplication+SwiftBaseProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+SwiftBaseProject.swift"; sourceTree = "<group>"; };
+		C2BE95F41CCFF56000539006 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C2C1DB631CBED6DB0030B4C9 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		C2C1DB651CBED6EB0030B4C9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		C2C1DB671CBED82C0030B4C9 /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				C2778FF51CB8496D00BA4025 /* Presentation */,
 				C2778FCE1CB8496100BA4025 /* Assets.xcassets */,
 				C2778FD01CB8496100BA4025 /* LaunchScreen.storyboard */,
+				C2BE95F41CCFF56000539006 /* R.generated.swift */,
 				C2778FD31CB8496100BA4025 /* Info.plist */,
 			);
 			path = SwiftBaseProject;
@@ -354,6 +357,7 @@
 			buildConfigurationList = C2778FEC1CB8496100BA4025 /* Build configuration list for PBXNativeTarget "SwiftBaseProject" */;
 			buildPhases = (
 				815A0A5C9B942233DA6EA589 /* Check Pods Manifest.lock */,
+				C2BE95F31CCFF48100539006 /* ShellScript */,
 				C2778FC01CB8496100BA4025 /* Sources */,
 				C2778FC11CB8496100BA4025 /* Frameworks */,
 				C2778FC21CB8496100BA4025 /* Resources */,
@@ -521,6 +525,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBaseProject/Pods-SwiftBaseProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C2BE95F31CCFF48100539006 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -553,6 +570,7 @@
 				C2C1DB641CBED6DB0030B4C9 /* BasePresenter.swift in Sources */,
 				C2BE95F21CCFF2FE00539006 /* UIApplication+SwiftBaseProject.swift in Sources */,
 				C2C1DB721CBEDA4D0030B4C9 /* BaseCollectionViewPresenter.swift in Sources */,
+				C2BE95F51CCFF56000539006 /* R.generated.swift in Sources */,
 				C2778FC81CB8496100BA4025 /* AppDelegate.swift in Sources */,
 				C21021BC1CC8147200874067 /* MoviesListView.swift in Sources */,
 				C2C1DB761CBEDA890030B4C9 /* BaseTableViewDataSource.swift in Sources */,

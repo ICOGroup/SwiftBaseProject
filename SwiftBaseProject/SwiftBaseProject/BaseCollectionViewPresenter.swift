@@ -9,6 +9,6 @@
 import UIKit
 
 public protocol BaseCollectionViewPresenter {
-    typealias ItemType
+    associatedtype ItemType
     func onItemClick(item: ItemType, position: Int)
 }

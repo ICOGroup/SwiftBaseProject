@@ -1,9 +1,13 @@
 PODS:
   - Alamofire (3.3.1)
+  - R.swift (2.1.0):
+    - R.swift.Library (~> 2.0.0)
+  - R.swift.Library (2.0.0)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - R.swift
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 EXTERNAL SOURCES:
@@ -17,6 +21,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  R.swift: efff131531b5cf142e28fd94957806ff71ccbcf2
+  R.swift.Library: 9f4b2d12040daa1ffe336d8f7e1574f73721fd01
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0

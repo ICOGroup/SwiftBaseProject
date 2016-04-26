@@ -8,12 +8,12 @@
 
 import UIKit
 
-public class BasePresenter<V: BaseView>: NSObject {
+class BasePresenter<V: BaseView>: NSObject {
 
-    public let view: V
-    public let router: Routing
+    let view: V
+    let router: Routing
     
-    public init(view: V, router: Routing){
+    init(view: V, router: Routing){
         
         self.view = view
         self.router = router
