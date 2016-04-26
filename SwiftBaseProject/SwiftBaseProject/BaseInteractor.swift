@@ -9,12 +9,12 @@
 import Foundation
 
 //Interactors represent UseCases, Each interactor does one thing only.
-public class BaseInteractor<O: BaseDataOutput>: NSObject {
+public class BaseInteractor<O: BaseDataOutput, R: BaseRepository>: NSObject {
 
     public let dataOutput: O
-    public let repository: BaseRepository
+    public let repository: R
     
-    required public init(dataOutput: O, repository: BaseRepository){
+    required public init(dataOutput: O, repository: R){
         
         self.dataOutput = dataOutput
         self.repository = repository

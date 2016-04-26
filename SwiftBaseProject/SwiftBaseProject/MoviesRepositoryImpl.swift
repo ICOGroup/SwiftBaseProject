@@ -16,27 +16,27 @@ class MoviesRepositoryImpl: NSObject {
 
 extension MoviesRepositoryImpl: MoviesRepository{
     
-    func searchMovieWithTitle(title: String) {
+    func searchMovieWithTitle(title: String, response: (movies: [Movie]?, error: String?) -> ()) {
         
         Alamofire.request(MoviesAPI.Search(query: title))
-        .responseJSON { (responseJSON) in
-            
-            switch(responseJSON.result){
-            case .Success(let result):
+            .responseJSON { (responseJSON) in
                 
-                let json = JSON(result)
+                switch(responseJSON.result){
+                case .Success(let result):
+                    
+                    let json = JSON(result)
+                    
+                    print(json)
+                    debugPrint(json)
+                    
+                    break
+                    
+                case .Failure(let error):
+                    
+                    print("error: "+error.localizedDescription)
+                    break
+                }
                 
-                print(json)
-                debugPrint(json)
-                
-                break
-                
-            case .Failure(let error):
-                
-                print("error: "+error.localizedDescription)
-                break
-            }
-
         }
     }
 }

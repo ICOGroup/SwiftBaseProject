@@ -10,5 +10,5 @@ import Foundation
 
 protocol MoviesRepository: BaseRepository {
     
-    func searchMovieWithTitle(title: String)
+    func searchMovieWithTitle(title: String, response: (movies: [Movie]?, error: String?) -> ())
 }

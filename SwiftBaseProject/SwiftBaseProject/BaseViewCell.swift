@@ -11,7 +11,7 @@ import Foundation
 public protocol BaseViewCell {
     static var identifier: String { get }
     
-    typealias ItemType
+    associatedtype ItemType
     
     func configureItem(item: ItemType)
 }

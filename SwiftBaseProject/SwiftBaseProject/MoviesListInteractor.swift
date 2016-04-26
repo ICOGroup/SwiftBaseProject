@@ -6,8 +6,31 @@
 //  Copyright © 2016 ICOgroup. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class MoviesListInteractor: NSObject {
-
+class MoviesListInteractor<O: MoviesListDataOutput, R: MoviesRepository>: BaseInteractor<O, R> {
+    
+    required init(dataOutput: O, repository: R) {
+        super.init(dataOutput: dataOutput, repository: repository)
+    }
+    
 }
+
+extension MoviesListInteractor: MoviesListProvider{
+    
+    func queryForMoviesWithTitle(title: String) {
+        
+        repository.searchMovieWithTitle(title) { (movies, error) in
+            
+            guard let moviess = movies else {
+
+                self.dataOutput.queryError(error!)
+                return
+            }
+            
+            self.dataOutput.moviesResult(moviess)
+        }
+    }
+}
+
+

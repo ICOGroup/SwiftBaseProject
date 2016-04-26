@@ -11,4 +11,6 @@ import Foundation
 protocol MoviesListView: BaseView {
     
     func displayMovies(movies: [Movie])
+    
+    func displayError(error: String)
 }

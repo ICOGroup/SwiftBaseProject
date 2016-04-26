@@ -9,6 +9,6 @@
 import UIKit
 
 public protocol BaseTableViewPresenter {
-    typealias ItemType
+    associatedtype ItemType
     func onItemClick(item: ItemType, position: Int)
 }

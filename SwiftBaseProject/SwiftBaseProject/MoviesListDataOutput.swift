@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol MoviesListDataOutput: BaseDataOutput {
+    
+    func moviesResult(movies: [Movie])
+    
+    func queryError(error: String)
+}

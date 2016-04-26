@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol MoviesListProvider: BaseDataProvider {
+    
+    func queryForMoviesWithTitle(title: String)
+}

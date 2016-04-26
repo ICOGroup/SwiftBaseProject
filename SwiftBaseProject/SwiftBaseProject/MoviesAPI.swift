@@ -74,7 +74,7 @@ enum MoviesAPI: URLRequestConvertible {
 //        URLRequest.setValue("application/json", forHTTPHeaderField: "Accept")
 //        URLRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let encoding = Alamofire.ParameterEncoding.URL
+        let encoding = Alamofire.ParameterEncoding.URLEncodedInURL
         return encoding.encode(URLRequest, parameters: result.parameters).0
     }
 }

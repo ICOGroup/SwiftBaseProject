@@ -14,7 +14,8 @@ class SearchMoviesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var presenter: MoviesListActionListener!
-    var dataSource: BaseTableViewDataSource<Movie, MovieTitleTableViewCell>()
+    var dataSource: BaseTableViewDataSource<Movie, MovieTitleTableViewCell>!
+    var delegate: BaseTableViewDelegate<BaseTableViewDataSource<Movie, MovieTitleTableViewCell>, MoviesListPresenter<SearchMoviesViewController>>!
     
     
     override func viewDidLoad() {
@@ -22,6 +23,14 @@ class SearchMoviesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         presenter = MoviesListPresenter(view: self, router: MoviesRouting())
+        
+        dataSource = BaseTableViewDataSource()
+        delegate = BaseTableViewDelegate(dataSource: dataSource, presenter: presenter as! MoviesListPresenter<SearchMoviesViewController>)
+        
+        tableView.dataSource = dataSource
+        tableView.delegate = delegate
+        
+        searchBar.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +42,10 @@ class SearchMoviesViewController: UIViewController {
 extension SearchMoviesViewController: MoviesListView {
     
     func displayMovies(movies: [Movie]) {
+        
+    }
+    
+    func displayError(error: String) {
         
     }
 }
