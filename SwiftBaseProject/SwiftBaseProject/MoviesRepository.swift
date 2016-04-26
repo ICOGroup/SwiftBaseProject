@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol MoviesRepository: BaseRepository {
+    
+    func searchMovieWithTitle(title: String)
+}

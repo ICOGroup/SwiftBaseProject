@@ -10,6 +10,8 @@ import UIKit
 
 class MovieTitleTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var movieTitleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +22,12 @@ class MovieTitleTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+}
 
+extension MovieTitleTableViewCell: BaseViewCell {
+    
+    func configureItem(item: Movie) {
+        
+        movieTitleLabel.text = item.title
+    }
 }

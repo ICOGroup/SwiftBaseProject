@@ -10,4 +10,14 @@ import UIKit
 
 class Movie: NSObject {
 
+    var title: String?
+    var year: String?
+    var released: String?
+    var genre: String?
+    var director: String?
+    var actors: String?
+    var plot: String?
+    var awards: String?
+    var poster: String?
+    var imdbRating: String?
 }

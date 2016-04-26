@@ -10,26 +10,40 @@ import UIKit
 
 class SearchMoviesViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var presenter: MoviesListActionListener!
+    var dataSource: BaseTableViewDataSource<Movie, MovieTitleTableViewCell>()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        presenter = MoviesListPresenter(view: self, router: MoviesRouting())
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+extension SearchMoviesViewController: MoviesListView {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func displayMovies(movies: [Movie]) {
+        
     }
-    */
+}
 
+extension SearchMoviesViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        
+        if let text = searchBar.text {
+            presenter.searchAllMoviesWithString(text)
+        }
+        
+    }
 }

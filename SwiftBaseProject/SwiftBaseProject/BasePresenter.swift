@@ -13,7 +13,7 @@ public class BasePresenter<V: BaseView>: NSObject {
     public let view: V
     public let router: Routing
     
-    required public init(view: V, router: Routing){
+    public init(view: V, router: Routing){
         
         self.view = view
         self.router = router

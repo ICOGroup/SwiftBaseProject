@@ -11,3 +11,7 @@ import UIKit
 class MoviesRouting: NSObject {
 
 }
+
+extension MoviesRouting: Routing {
+    
+}

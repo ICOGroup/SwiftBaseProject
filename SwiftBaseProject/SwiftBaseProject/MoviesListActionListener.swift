@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol MoviesListActionListener: BaseActionListener {
+    
+    func searchAllMoviesWithString(string: String)
+}

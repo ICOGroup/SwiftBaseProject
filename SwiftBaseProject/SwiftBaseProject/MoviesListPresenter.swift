@@ -8,6 +8,16 @@
 
 import UIKit
 
-class MoviesListPresenter: NSObject {
+class MoviesListPresenter<V: MoviesListView>: BasePresenter<V> {
 
+    override init(view: V, router: Routing) {
+        super.init(view: view, router: router)
+    }
+}
+
+extension MoviesListPresenter: MoviesListActionListener{
+    
+    func searchAllMoviesWithString(string: String) {
+        
+    }
 }

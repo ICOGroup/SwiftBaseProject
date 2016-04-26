@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol MoviesListView: BaseView {
+    
+    func displayMovies(movies: [Movie])
+}
