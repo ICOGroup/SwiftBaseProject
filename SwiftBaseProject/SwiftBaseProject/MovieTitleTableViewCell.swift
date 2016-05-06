@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Haneke
 
 class MovieTitleTableViewCell: UITableViewCell {
 
     @IBOutlet weak var movieTitleLabel: UILabel!
+    @IBOutlet weak var movieCoverImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,5 +31,10 @@ extension MovieTitleTableViewCell: BaseViewCell {
     func configureItem(item: Movie) {
         
         movieTitleLabel.text = item.title
+        
+        if let cover = item.poster {
+            movieCoverImage.hnk_setImageFromURL(NSURL(string: cover)!)
+            print("coverUrl: "+cover)
+        }
     }
 }

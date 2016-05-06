@@ -28,7 +28,13 @@ extension MoviesListInteractor: MoviesListProvider{
                 return
             }
             
-            self.dataOutput.moviesResult(moviess)
+            //Remove entries that are Type == Game
+            let filteredMovies = moviess.filter({ (m) -> Bool in
+                
+                return m.type == "movie"
+            })
+            
+            self.dataOutput.moviesResult(filteredMovies)
         }
     }
 }

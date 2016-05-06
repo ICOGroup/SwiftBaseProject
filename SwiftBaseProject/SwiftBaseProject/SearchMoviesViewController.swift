@@ -28,7 +28,7 @@ class SearchMoviesViewController: UIViewController {
         delegate = BaseTableViewDelegate(dataSource: dataSource, presenter: presenter as! MoviesListPresenter<SearchMoviesViewController>)
         
         //Tableview setup
-        tableView.estimatedRowHeight = 44
+        tableView.estimatedRowHeight = 70
         tableView.rowHeight = UITableViewAutomaticDimension
         
         tableView.dataSource = dataSource
