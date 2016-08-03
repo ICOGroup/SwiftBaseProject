@@ -21,16 +21,6 @@ enum MoviesAPI: URLRequestConvertible {
         switch self {
         case .Search:
             return .POST
-//        case .Register:
-//            return .POST
-//        case .Login:
-//            return .POST
-            //        case .ReadUser:
-            //            return .GET
-            //        case .UpdateUser:
-            //            return .PUT
-            //        case .DestroyUser:
-            //            return .DELETE
         }
     }
     
@@ -39,16 +29,6 @@ enum MoviesAPI: URLRequestConvertible {
             
         case .Search:
             return ""
-//        case .Register:
-//            return "/api/users/register"
-//        case .Login:
-//            return "/api/users/token"
-            //        case .ReadUser(let username):
-            //            return "/users/\(username)"
-            //        case .UpdateUser(let username, _):
-            //            return "/users/\(username)"
-            //        case .DestroyUser(let username):
-            //            return "/users/\(username)"
         }
     }
     
@@ -59,10 +39,6 @@ enum MoviesAPI: URLRequestConvertible {
                 
             case .Search(let query):
                 return (path, ["s": query])
-//            case .Register(let user):
-//                return (path, ["username": user.userName!, "password": user.password!, "activate": true])
-//            case .Login(let user):
-//                return (path, ["email": user.email!, "password": user.password!])
             }
         }()
         
@@ -72,8 +48,6 @@ enum MoviesAPI: URLRequestConvertible {
         
         // set header fields
 //        URLRequest.setValue("application/json", forHTTPHeaderField: "Accept")
-//        URLRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
         let encoding = Alamofire.ParameterEncoding.URLEncodedInURL
         return encoding.encode(URLRequest, parameters: result.parameters).0
     }
