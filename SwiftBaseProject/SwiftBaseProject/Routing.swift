@@ -9,9 +9,8 @@
 import Foundation
 
 //Declare here all view controller transitions
+//Ej: func home(), or func photoDetail(photo)
 protocol Routing {
     
-    func search()
     
-    func movieDetail(movie: Movie)
 }

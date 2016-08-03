@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		63A78E72FDA6AA50C0539C36 /* Pods_SwiftBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179964F4D9C5B67531B15FB6 /* Pods_SwiftBaseProject.framework */; };
-		C21021B81CC812D100874067 /* SearchMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21021B71CC812D100874067 /* SearchMoviesViewController.swift */; };
-		C21021BC1CC8147200874067 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21021BB1CC8147200874067 /* MoviesListView.swift */; };
-		C21021BE1CC814B300874067 /* MoviesListActionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21021BD1CC814B300874067 /* MoviesListActionListener.swift */; };
-		C21021C11CC8151000874067 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21021C01CC8151000874067 /* Movie.swift */; };
-		C21021C31CC819E800874067 /* MoviesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21021C21CC819E800874067 /* MoviesListPresenter.swift */; };
-		C21021C51CC81CE200874067 /* MoviesRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21021C41CC81CE200874067 /* MoviesRouting.swift */; };
+		C2476EE71D5244A2004381E1 /* RoutingImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EE61D5244A2004381E1 /* RoutingImpl.swift */; };
+		C2476EEA1D524568004381E1 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EE91D524568004381E1 /* UsersRepository.swift */; };
+		C2476EEC1D524582004381E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EEB1D524582004381E1 /* User.swift */; };
+		C2476EEE1D524667004381E1 /* UsersRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EED1D524667004381E1 /* UsersRepositoryImpl.swift */; };
+		C2476EF01D524690004381E1 /* UsersRepositoryFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EEF1D524690004381E1 /* UsersRepositoryFakeImpl.swift */; };
+		C2476EF31D524759004381E1 /* SwiftyMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EF21D524759004381E1 /* SwiftyMappable.swift */; };
+		C2476EF91D52719D004381E1 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EF81D52719D004381E1 /* LoginContract.swift */; };
+		C2476EFB1D5271F0004381E1 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EFA1D5271F0004381E1 /* LoginInteractor.swift */; };
+		C2476EFD1D5273F9004381E1 /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EFC1D5273F9004381E1 /* RegisterContract.swift */; };
+		C2476EFF1D527467004381E1 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476EFE1D527467004381E1 /* RegisterInteractor.swift */; };
+		C2476F021D5279E4004381E1 /* ChangePasswordContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476F011D5279E4004381E1 /* ChangePasswordContract.swift */; };
+		C2476F041D527A79004381E1 /* ChangePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2476F031D527A79004381E1 /* ChangePasswordInteractor.swift */; };
 		C2778FC81CB8496100BA4025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2778FC71CB8496100BA4025 /* AppDelegate.swift */; };
 		C2778FCD1CB8496100BA4025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2778FCB1CB8496100BA4025 /* Main.storyboard */; };
 		C2778FCF1CB8496100BA4025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2778FCE1CB8496100BA4025 /* Assets.xcassets */; };
@@ -22,14 +28,7 @@
 		C2778FE81CB8496100BA4025 /* SwiftBaseProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2778FE71CB8496100BA4025 /* SwiftBaseProjectUITests.swift */; };
 		C2A1F5731CC11CF200101F0E /* BaseActionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1F5721CC11CF200101F0E /* BaseActionListener.swift */; };
 		C2A1F5751CC11D1800101F0E /* BaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1F5741CC11D1800101F0E /* BaseDataProvider.swift */; };
-		C2A1F5771CC11EB600101F0E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1F5761CC11EB600101F0E /* BaseViewController.swift */; };
-		C2BE95E11CCFB2C600539006 /* MoviesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95E01CCFB2C600539006 /* MoviesAPI.swift */; };
-		C2BE95E31CCFB66000539006 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95E21CCFB66000539006 /* MoviesRepository.swift */; };
-		C2BE95E51CCFB6BF00539006 /* MoviesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95E41CCFB6BF00539006 /* MoviesRepositoryImpl.swift */; };
-		C2BE95E71CCFBB4B00539006 /* MovieTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95E61CCFBB4B00539006 /* MovieTitleTableViewCell.swift */; };
-		C2BE95E91CCFBDF100539006 /* MoviesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95E81CCFBDF100539006 /* MoviesListInteractor.swift */; };
-		C2BE95EB1CCFBE3200539006 /* MoviesListDataOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95EA1CCFBE3200539006 /* MoviesListDataOutput.swift */; };
-		C2BE95ED1CCFBE4000539006 /* MoviesListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95EC1CCFBE4000539006 /* MoviesListProvider.swift */; };
+		C2BE95E11CCFB2C600539006 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95E01CCFB2C600539006 /* API.swift */; };
 		C2BE95F21CCFF2FE00539006 /* UIApplication+SwiftBaseProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95F11CCFF2FE00539006 /* UIApplication+SwiftBaseProject.swift */; };
 		C2BE95F51CCFF56000539006 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE95F41CCFF56000539006 /* R.generated.swift */; };
 		C2C1DB641CBED6DB0030B4C9 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1DB631CBED6DB0030B4C9 /* BasePresenter.swift */; };
@@ -70,12 +69,18 @@
 		179964F4D9C5B67531B15FB6 /* Pods_SwiftBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8D85505305662931F3E5A9 /* Pods-SwiftBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBaseProject/Pods-SwiftBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		B9D5ED70BCCEFE9CCBAF7541 /* Pods-SwiftBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBaseProject/Pods-SwiftBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
-		C21021B71CC812D100874067 /* SearchMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMoviesViewController.swift; sourceTree = "<group>"; };
-		C21021BB1CC8147200874067 /* MoviesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
-		C21021BD1CC814B300874067 /* MoviesListActionListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesListActionListener.swift; sourceTree = "<group>"; };
-		C21021C01CC8151000874067 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		C21021C21CC819E800874067 /* MoviesListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesListPresenter.swift; sourceTree = "<group>"; };
-		C21021C41CC81CE200874067 /* MoviesRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesRouting.swift; sourceTree = "<group>"; };
+		C2476EE61D5244A2004381E1 /* RoutingImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingImpl.swift; sourceTree = "<group>"; };
+		C2476EE91D524568004381E1 /* UsersRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
+		C2476EEB1D524582004381E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C2476EED1D524667004381E1 /* UsersRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRepositoryImpl.swift; sourceTree = "<group>"; };
+		C2476EEF1D524690004381E1 /* UsersRepositoryFakeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRepositoryFakeImpl.swift; sourceTree = "<group>"; };
+		C2476EF21D524759004381E1 /* SwiftyMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyMappable.swift; sourceTree = "<group>"; };
+		C2476EF81D52719D004381E1 /* LoginContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		C2476EFA1D5271F0004381E1 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		C2476EFC1D5273F9004381E1 /* RegisterContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
+		C2476EFE1D527467004381E1 /* RegisterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		C2476F011D5279E4004381E1 /* ChangePasswordContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordContract.swift; sourceTree = "<group>"; };
+		C2476F031D527A79004381E1 /* ChangePasswordInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordInteractor.swift; sourceTree = "<group>"; };
 		C2778FC41CB8496100BA4025 /* SwiftBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2778FC71CB8496100BA4025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2778FCC1CB8496100BA4025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,14 +95,7 @@
 		C2778FE91CB8496100BA4025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2A1F5721CC11CF200101F0E /* BaseActionListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseActionListener.swift; sourceTree = "<group>"; };
 		C2A1F5741CC11D1800101F0E /* BaseDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataProvider.swift; sourceTree = "<group>"; };
-		C2A1F5761CC11EB600101F0E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		C2BE95E01CCFB2C600539006 /* MoviesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesAPI.swift; sourceTree = "<group>"; };
-		C2BE95E21CCFB66000539006 /* MoviesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
-		C2BE95E41CCFB6BF00539006 /* MoviesRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryImpl.swift; sourceTree = "<group>"; };
-		C2BE95E61CCFBB4B00539006 /* MovieTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTitleTableViewCell.swift; sourceTree = "<group>"; };
-		C2BE95E81CCFBDF100539006 /* MoviesListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesListInteractor.swift; sourceTree = "<group>"; };
-		C2BE95EA1CCFBE3200539006 /* MoviesListDataOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesListDataOutput.swift; sourceTree = "<group>"; };
-		C2BE95EC1CCFBE4000539006 /* MoviesListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesListProvider.swift; sourceTree = "<group>"; };
+		C2BE95E01CCFB2C600539006 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C2BE95F11CCFF2FE00539006 /* UIApplication+SwiftBaseProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+SwiftBaseProject.swift"; sourceTree = "<group>"; };
 		C2BE95F41CCFF56000539006 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C2C1DB631CBED6DB0030B4C9 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
@@ -169,42 +167,64 @@
 			name = Domain;
 			sourceTree = "<group>";
 		};
-		C21021B61CC812A600874067 /* MoviesList */ = {
-			isa = PBXGroup;
-			children = (
-				C21021B71CC812D100874067 /* SearchMoviesViewController.swift */,
-				C2BE95E61CCFBB4B00539006 /* MovieTitleTableViewCell.swift */,
-			);
-			name = MoviesList;
-			sourceTree = "<group>";
-		};
 		C21021B91CC8144D00874067 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				C21021BA1CC8145200874067 /* MoviesList */,
 			);
 			name = Sections;
-			sourceTree = "<group>";
-		};
-		C21021BA1CC8145200874067 /* MoviesList */ = {
-			isa = PBXGroup;
-			children = (
-				C21021BB1CC8147200874067 /* MoviesListView.swift */,
-				C21021BD1CC814B300874067 /* MoviesListActionListener.swift */,
-				C2BE95EA1CCFBE3200539006 /* MoviesListDataOutput.swift */,
-				C2BE95EC1CCFBE4000539006 /* MoviesListProvider.swift */,
-				C21021C21CC819E800874067 /* MoviesListPresenter.swift */,
-				C2BE95E81CCFBDF100539006 /* MoviesListInteractor.swift */,
-			);
-			name = MoviesList;
 			sourceTree = "<group>";
 		};
 		C21021BF1CC814FE00874067 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C21021C01CC8151000874067 /* Movie.swift */,
+				C2476EEB1D524582004381E1 /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		C2476EE81D524552004381E1 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				C2476F001D5279D0004381E1 /* ChangePassword */,
+				C2476EF71D527191004381E1 /* Login */,
+				C2476EF61D52718D004381E1 /* Register */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		C2476EF11D524745004381E1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C2476EF21D524759004381E1 /* SwiftyMappable.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C2476EF61D52718D004381E1 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C2476EFC1D5273F9004381E1 /* RegisterContract.swift */,
+				C2476EFE1D527467004381E1 /* RegisterInteractor.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		C2476EF71D527191004381E1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C2476EF81D52719D004381E1 /* LoginContract.swift */,
+				C2476EFA1D5271F0004381E1 /* LoginInteractor.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		C2476F001D5279D0004381E1 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				C2476F011D5279E4004381E1 /* ChangePasswordContract.swift */,
+				C2476F031D527A79004381E1 /* ChangePasswordInteractor.swift */,
+			);
+			name = ChangePassword;
 			sourceTree = "<group>";
 		};
 		C2778FBB1CB8496100BA4025 = {
@@ -263,7 +283,6 @@
 		C2778FF51CB8496D00BA4025 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				C21021B61CC812A600874067 /* MoviesList */,
 				C2778FC71CB8496100BA4025 /* AppDelegate.swift */,
 				C2778FF81CB8498900BA4025 /* Storyboards */,
 			);
@@ -273,6 +292,8 @@
 		C2778FF61CB8497500BA4025 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C2476EF11D524745004381E1 /* Helpers */,
+				C2476EE81D524552004381E1 /* Interactors */,
 				C21021BF1CC814FE00874067 /* Models */,
 				C21021B91CC8144D00874067 /* Sections */,
 				C2C1DB601CBEC5DE0030B4C9 /* Base */,
@@ -294,7 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				C2C1DB671CBED82C0030B4C9 /* Routing.swift */,
-				C21021C41CC81CE200874067 /* MoviesRouting.swift */,
+				C2476EE61D5244A2004381E1 /* RoutingImpl.swift */,
 			);
 			name = Routing;
 			sourceTree = "<group>";
@@ -302,9 +323,10 @@
 		C2A1F5711CC11CB400101F0E /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				C2BE95E01CCFB2C600539006 /* MoviesAPI.swift */,
-				C2BE95E21CCFB66000539006 /* MoviesRepository.swift */,
-				C2BE95E41CCFB6BF00539006 /* MoviesRepositoryImpl.swift */,
+				C2BE95E01CCFB2C600539006 /* API.swift */,
+				C2476EE91D524568004381E1 /* UsersRepository.swift */,
+				C2476EED1D524667004381E1 /* UsersRepositoryImpl.swift */,
+				C2476EEF1D524690004381E1 /* UsersRepositoryFakeImpl.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -335,7 +357,6 @@
 		C2C1DB811CBEE3E30030B4C9 /* UIBase */ = {
 			isa = PBXGroup;
 			children = (
-				C2A1F5761CC11EB600101F0E /* BaseViewController.swift */,
 				C2C1DB6B1CBEDA1E0030B4C9 /* BaseViewCell.swift */,
 				C2C1DB691CBED9FE0030B4C9 /* BaseCollectionViewDataSource.swift */,
 				C2C1DB6F1CBEDA420030B4C9 /* BaseCollectionViewDelegate.swift */,
@@ -545,39 +566,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2BE95EB1CCFBE3200539006 /* MoviesListDataOutput.swift in Sources */,
+				C2476EF31D524759004381E1 /* SwiftyMappable.swift in Sources */,
 				C2C1DB681CBED82C0030B4C9 /* Routing.swift in Sources */,
-				C2BE95E71CCFBB4B00539006 /* MovieTitleTableViewCell.swift in Sources */,
 				C2C1DB6C1CBEDA1E0030B4C9 /* BaseViewCell.swift in Sources */,
 				C2C1DB741CBEDA590030B4C9 /* BasePageViewDataSource.swift in Sources */,
-				C21021C11CC8151000874067 /* Movie.swift in Sources */,
-				C2BE95E31CCFB66000539006 /* MoviesRepository.swift in Sources */,
 				C2C1DB7C1CBEDEDC0030B4C9 /* BaseRepository.swift in Sources */,
-				C2BE95E11CCFB2C600539006 /* MoviesAPI.swift in Sources */,
-				C2A1F5771CC11EB600101F0E /* BaseViewController.swift in Sources */,
+				C2476EEE1D524667004381E1 /* UsersRepositoryImpl.swift in Sources */,
+				C2BE95E11CCFB2C600539006 /* API.swift in Sources */,
 				C2C1DB7E1CBEDEF00030B4C9 /* BaseDataOutput.swift in Sources */,
-				C21021B81CC812D100874067 /* SearchMoviesViewController.swift in Sources */,
 				C2C1DB6A1CBED9FE0030B4C9 /* BaseCollectionViewDataSource.swift in Sources */,
-				C2BE95ED1CCFBE4000539006 /* MoviesListProvider.swift in Sources */,
+				C2476EF91D52719D004381E1 /* LoginContract.swift in Sources */,
+				C2476EEC1D524582004381E1 /* User.swift in Sources */,
 				C2C1DB7A1CBEDA9D0030B4C9 /* BaseTableViewDelegate.swift in Sources */,
+				C2476F041D527A79004381E1 /* ChangePasswordInteractor.swift in Sources */,
 				C2A1F5731CC11CF200101F0E /* BaseActionListener.swift in Sources */,
-				C21021C31CC819E800874067 /* MoviesListPresenter.swift in Sources */,
-				C2BE95E51CCFB6BF00539006 /* MoviesRepositoryImpl.swift in Sources */,
-				C21021C51CC81CE200874067 /* MoviesRouting.swift in Sources */,
+				C2476EE71D5244A2004381E1 /* RoutingImpl.swift in Sources */,
 				C2C1DB781CBEDA900030B4C9 /* BaseTableViewPresenter.swift in Sources */,
 				C2C1DB6E1CBEDA390030B4C9 /* BaseViewDataSource.swift in Sources */,
-				C2BE95E91CCFBDF100539006 /* MoviesListInteractor.swift in Sources */,
 				C2C1DB641CBED6DB0030B4C9 /* BasePresenter.swift in Sources */,
+				C2476EEA1D524568004381E1 /* UsersRepository.swift in Sources */,
 				C2BE95F21CCFF2FE00539006 /* UIApplication+SwiftBaseProject.swift in Sources */,
+				C2476EF01D524690004381E1 /* UsersRepositoryFakeImpl.swift in Sources */,
+				C2476EFD1D5273F9004381E1 /* RegisterContract.swift in Sources */,
 				C2C1DB721CBEDA4D0030B4C9 /* BaseCollectionViewPresenter.swift in Sources */,
 				C2BE95F51CCFF56000539006 /* R.generated.swift in Sources */,
 				C2778FC81CB8496100BA4025 /* AppDelegate.swift in Sources */,
-				C21021BC1CC8147200874067 /* MoviesListView.swift in Sources */,
+				C2476EFB1D5271F0004381E1 /* LoginInteractor.swift in Sources */,
 				C2C1DB761CBEDA890030B4C9 /* BaseTableViewDataSource.swift in Sources */,
 				C2C1DB701CBEDA420030B4C9 /* BaseCollectionViewDelegate.swift in Sources */,
-				C21021BE1CC814B300874067 /* MoviesListActionListener.swift in Sources */,
 				C2C1DB801CBEDF3A0030B4C9 /* BaseInteractor.swift in Sources */,
+				C2476EFF1D527467004381E1 /* RegisterInteractor.swift in Sources */,
 				C2C1DB661CBED6EB0030B4C9 /* BaseView.swift in Sources */,
+				C2476F021D5279E4004381E1 /* ChangePasswordContract.swift in Sources */,
 				C2A1F5751CC11D1800101F0E /* BaseDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

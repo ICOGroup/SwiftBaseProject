@@ -1,31 +1,23 @@
 //
-//  MoviesRouting.swift
+//  RoutingImpl.swift
 //  SwiftBaseProject
 //
-//  Created by Manuel Muñoz on 4/20/16.
+//  Created by Manuel Muñoz on 8/3/16.
 //  Copyright © 2016 ICOgroup. All rights reserved.
 //
 
 import UIKit
 
-class MoviesRouting: NSObject {
+class RoutingImpl: NSObject {
 
 }
 
-extension MoviesRouting: Routing {
+extension RoutingImpl: Routing{
     
-    func search() {
-        
-        let searchVC = R.storyboard.main.searchMoviesViewController()!
-        presentViewController(searchVC)
-    }
-    
-    func movieDetail(movie: Movie) {
-        
-    }
 }
 
-extension MoviesRouting {
+// Helper functions to present or push view controllers
+extension RoutingImpl {
     
     private func presentViewController(viewController: UIViewController) {
         
